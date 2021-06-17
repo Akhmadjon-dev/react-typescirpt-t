@@ -1,17 +1,15 @@
-import React from 'react'
-
+import Hoc from './Hoc'
 
 interface UserMessage{
     name: string;
     message: string;
 }
-const Message = (props: UserMessage)  => {
-    return (
-        <div className="App">
-            <p>{props.name}</p>
-            <p>{props.message}</p>
-        </div>
-    )
-}
+
+const example = (props: UserMessage): any => <p>
+    {props.name},
+    {props.message}
+</p>
+
+const Message = Hoc(example);
 
 export default Message

@@ -15,7 +15,7 @@ export default class App extends Component <any, State>{
     return (
       <div>
 
-        <Message name={this.state.name} message={this.state.message} />
+        <Message />
 
       </div>
     )
